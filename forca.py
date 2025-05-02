@@ -71,8 +71,11 @@ forca = [
     |___
     """
 ]
-
-
+print("="*46)
+print("  JOGO DA FORCA, VOCÊ SÓ PODE ERRAR 6 VEZES  ")
+print("="*46)
+print(f"           A PALAVRA TEM {len(palavra)} LETRAS     ")
+print("="*46)
 
 while errototal < 6 :
     letra = input("Digite uma letra: ")
@@ -88,7 +91,7 @@ while errototal < 6 :
         tentativa-=1
     letraerro = 0
 
-    if errototal >= 0 and errototal < 6:
+    if errototal < 6:
         print(forca[errototal])
         print(f"Você ainda tem {tentativa} tentativas")
     else:
